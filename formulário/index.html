@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trabalhando com formulários</h1>
+
+    <form action="" method="POST">
+        <label for="email">Seu email</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="pnome">Primeiro nome</label>
+        <input name="pnome" type="text" id="pnome" placeholder="Primeiro nome" required> <br> <br>
+
+        <label for="unome">Ultimo nome</label>
+        <input type="text" name="unome" id="unome" placeholder="Ultimo nome" required>
+        <br><br>
+
+
+        <label>Qual seu nível como programador</label><br>
+
+        <label>
+            <input type="radio" name="nivel" value="iniciante">Iniciante <br>
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="Intermediario">Intermediário <br>
+        </label>
+        <label>
+            <input type="radio" name="nivel" value="Avancado">Avançado <br>
+        </label>
+        <br><br>
+        <label for="escolaridade">Sua escolaridade</label>
+
+        <select id="escolaridade" required
+        >
+            <option selected disabled value="">Selecione</option>
+            <option value="fundamental">fundamental</option>
+            <option value="medio">Médio</option>
+            <option value="Superior">Superior</option>
+        </select>
+        <br><br>
+        
+
+        <label>Tecnologias</label><br>
+
+        <input type="checkbox" id="tec1" name="tec1" value="HTML">
+        <label for="tec1">HTML</label>
+
+        <input type="checkbox" id="tec2" name="tec2" value="CSS">
+        <label for="tec2">CSS</label>
+
+        <input type="checkbox" id="tec3" name="tec3" value="JavaScript">
+        <label for="tec3">JavaScript</label> <br><br>
+
+        <label for="nascimento">Informe sua data de nascimento</label>
+        <input type="date" name="nascimento" id="nascimento">
+
+        <br><br><input type="submit" value="cadastrar">
+    </form>
+</body>
+</html>
